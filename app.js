@@ -8,10 +8,10 @@ const mongoose = require("mongoose");
 const app = express();
 const _= require("lodash");
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');//for connect with ejs files
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }));  // for reach a code 
+app.use(express.static("public")); // for connect with the css
 
 //const uri = 'mongodb://127.0.0.1:27017';
 const uri = 'mongodb+srv://admin-Dheerap:JEC2025@cluster0.0y6f2hz.mongodb.net';
